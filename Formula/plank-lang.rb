@@ -1,4 +1,4 @@
-class Plank < Formula
+class PlankLang < Formula
   desc "Compiled language you can read in an evening: one Python file on LLVM"
   homepage "https://plank.heyitsmejosh.com"
   url "https://github.com/nulljosh/plank/archive/refs/tags/v1.6.0.tar.gz"
@@ -6,6 +6,8 @@ class Plank < Formula
   license "MIT"
 
   depends_on "uv"
+
+  conflicts_with "plank", because: "both install a plank binary; this one is the language"
 
   def install
     bin.install "plank.py" => "plank"

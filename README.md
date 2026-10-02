@@ -1,7 +1,7 @@
 # homebrew-plank
 
 ```
-brew install nulljosh/plank/plank
+brew install nulljosh/plank/plank-lang
 plank run hello.pk
 ```
 
